@@ -31,7 +31,7 @@ public class FrequencyWords {
         Scanner scanner = new Scanner(file);
         while (scanner.hasNextLine()) {
             String line = scanner.nextLine();
-            String[] words = line.split("\\W+");
+            String[] words = line.split("[^a-zA-Z0-9]+");
 
             for (String word : words) {
                 String w = word.toLowerCase();
