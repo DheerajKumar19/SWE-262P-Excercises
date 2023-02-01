@@ -18,8 +18,9 @@ public class Seven {
 
     public static void main(String[] args) throws IOException {
         try {
-            URI uri1 = ClassLoader.getSystemResource("stop_words.txt").toURI();
-            URI uri2 = ClassLoader.getSystemResource("pride-and-prejudice.txt").toURI();
+            URI uri1 = ClassLoader.getSystemResource(args[0]).toURI();
+            URI uri2 = ClassLoader.getSystemResource(args[1]).toURI();
+
             Files.lines(Paths.get(uri1))
                     .forEach(line -> stop_words.addAll(Arrays.asList(line.split(","))));
             frequencies = Files.lines(Paths.get(uri2))
