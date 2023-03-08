@@ -6,8 +6,8 @@ import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
-        File mainText = new File("C:\\WinterQuarter-23\\262P-Project\\week8\\src\\main\\java\\org\\example\\pride-and-prejudice.txt");
-        File stopWords = new File("C:\\WinterQuarter-23\\262P-Project\\week8\\src\\main\\java\\org\\example\\stop_words.txt");
+        File mainText = new File("C:\\WinterQuarter-23\\MSWE-262P\\week8\\src\\main\\java\\org\\example\\pride-and-prejudice.txt");
+        File stopWords = new File("C:\\WinterQuarter-23\\MSWE-262P\\week8\\src\\main\\java\\org\\example\\stop_words.txt");
 
         try {
             Scanner pnp = new Scanner(mainText).useDelimiter("[^a-zA-Z0-9]+");
